@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="$PEE - The wildest meme coin on Solana, bringing laughs, chaos, and community vibes to the blockchain! Originally inspired by the SUI token, but flowing strong on Solana.">
+    <meta name="description"
+        content="$PEE - The wildest meme coin on Solana, bringing laughs, chaos, and community vibes to the blockchain! Originally inspired by the SUI token, but flowing strong on Solana.">
     <meta name="keywords" content="$PEE, peecoin, meme coin, cryptocurrency, blockchain, tokenomics, community, Solana">
     <meta name="author" content="$PEE Crew">
     <link rel="shortcut icon" href="./assets/pee_main_text.png" type="image/x-icon">
     <title>$PEE - Gotta PEE?</title>
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Inter:wght@300;600;800&family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Inter:wght@300;600;800&family=Luckiest+Guy&display=swap"
+        rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <style>
         body {
@@ -25,7 +29,10 @@
             touch-action: pan-y;
         }
 
-        a:hover, button:hover, .cta-button:hover, .social-icon:hover {
+        a:hover,
+        button:hover,
+        .cta-button:hover,
+        .social-icon:hover {
             cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="14" stroke="%23FFD700" stroke-width="3" fill="none"/><circle cx="16" cy="16" r="5" fill="%23FFD700"><animate attributeName="opacity" values="1;0.4;1" dur="1s" repeatCount="indefinite"/></circle></svg>') 16 16, pointer;
         }
 
@@ -60,7 +67,7 @@
         #logo {
             width: 240px;
             max-width: 100%;
-            filter: drop-shadow(0 0 15px rgba(255,255,0,0.4)) brightness(1.1);
+            filter: drop-shadow(0 0 15px rgba(255, 255, 0, 0.4)) brightness(1.1);
             margin-bottom: 20px;
         }
 
@@ -108,10 +115,10 @@
 
         .section {
             padding: 50px;
-            background: linear-gradient(135deg, rgba(255,255,0,0.15), rgba(0,0,0,0.7));
+            background: linear-gradient(135deg, rgba(255, 255, 0, 0.15), rgba(0, 0, 0, 0.7));
             border: 4px dashed #FFFF00;
             border-radius: 40px;
-            box-shadow: 0 10px 40px rgba(255,255,0,0.25), inset 0 0 15px rgba(255,255,0,0.15);
+            box-shadow: 0 10px 40px rgba(255, 255, 0, 0.25), inset 0 0 15px rgba(255, 255, 0, 0.15);
             opacity: 0;
             transform: translateY(50px) skewX(-5deg);
             transition: opacity 0.8s ease, transform 0.8s ease, box-shadow 0.4s ease;
@@ -123,14 +130,15 @@
         }
 
         .section:hover {
-            box-shadow: 0 15px 50px rgba(255,255,0,0.3), inset 0 0 20px rgba(255,255,0,0.2);
+            box-shadow: 0 15px 50px rgba(255, 255, 0, 0.3), inset 0 0 20px rgba(255, 255, 0, 0.2);
             transform: scale(1.02) skewX(2deg);
         }
 
-        h1, h2 {
+        h1,
+        h2 {
             font-family: 'Luckiest Guy', cursive;
             color: #FFFF00;
-            text-shadow: 0 0 10px rgba(255,255,0,0.4);
+            text-shadow: 0 0 10px rgba(255, 255, 0, 0.4);
         }
 
         h1 {
@@ -163,7 +171,7 @@
             font-size: 1.8em;
             font-family: 'Luckiest Guy', cursive;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 20px rgba(255,255,0,0.4);
+            box-shadow: 0 4px 20px rgba(255, 255, 0, 0.4);
             margin-top: 25px;
             display: inline-block;
             text-transform: uppercase;
@@ -172,7 +180,7 @@
         .cta-button:hover {
             background: linear-gradient(135deg, #FFD700, #FFFF00);
             transform: scale(1.15) rotate(5deg);
-            box-shadow: 0 8px 30px rgba(255,255,0,0.6);
+            box-shadow: 0 8px 30px rgba(255, 255, 0, 0.6);
         }
 
         .social-links {
@@ -186,13 +194,13 @@
             width: 55px;
             height: 55px;
             transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
-            filter: drop-shadow(0 0 5px rgba(255,255,0,0.5));
+            filter: drop-shadow(0 0 5px rgba(255, 255, 0, 0.5));
         }
 
         .social-icon:hover {
             transform: scale(1.3) rotate(15deg);
-            filter: brightness(1.2) drop-shadow(0 0 10px rgba(255,215,0,0.7));
-            box-shadow: 0 0 15px rgba(255,215,0,0.5);
+            filter: brightness(1.2) drop-shadow(0 0 10px rgba(255, 215, 0, 0.7));
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
         }
 
         .ca-address {
@@ -203,10 +211,10 @@
             word-break: break-all;
             margin: 30px 0;
             text-align: center;
-            background: linear-gradient(135deg, rgba(255,255,0,0.1), rgba(0,0,0,0.9));
+            background: linear-gradient(135deg, rgba(255, 255, 0, 0.1), rgba(0, 0, 0, 0.9));
             padding: 20px;
             border-radius: 25px;
-            box-shadow: 0 0 20px rgba(255,255,0,0.3);
+            box-shadow: 0 0 20px rgba(255, 255, 0, 0.3);
         }
 
         .header-socials {
@@ -219,10 +227,10 @@
         #gallery-section {
             grid-column: 1 / -1;
             padding: 50px;
-            background: linear-gradient(135deg, rgba(255,255,0,0.15), rgba(0,0,0,0.7));
+            background: linear-gradient(135deg, rgba(255, 255, 0, 0.15), rgba(0, 0, 0, 0.7));
             border: 4px dashed #FFFF00;
             border-radius: 40px;
-            box-shadow: 0 10px 40px rgba(255,255,0,0.25), inset 0 0 15px rgba(255,255,0,0.15);
+            box-shadow: 0 10px 40px rgba(255, 255, 0, 0.25), inset 0 0 15px rgba(255, 255, 0, 0.15);
         }
 
         .gallery {
@@ -280,16 +288,16 @@
 
         .gallery img:hover {
             transform: scale(1.2) rotate(5deg);
-            box-shadow: 0 0 20px rgba(255,255,0,0.6);
+            box-shadow: 0 0 20px rgba(255, 255, 0, 0.6);
             filter: sepia(0) brightness(1.3);
         }
 
         #chart-section {
             padding: 50px;
-            background: linear-gradient(135deg, rgba(255,255,0,0.15), rgba(0,0,0,0.7));
+            background: linear-gradient(135deg, rgba(255, 255, 0, 0.15), rgba(0, 0, 0, 0.7));
             border: 4px dashed #FFFF00;
             border-radius: 40px;
-            box-shadow: 0 10px 40px rgba(255,255,0,0.25);
+            box-shadow: 0 10px 40px rgba(255, 255, 0, 0.25);
         }
 
         #dexscreener-embed {
@@ -315,8 +323,8 @@
             font-family: 'Inter', sans-serif;
             font-size: 1.1em;
             font-weight: 300;
-            background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(255,255,0,0.15));
-            border-top: 3px solid rgba(255,255,0,0.3);
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 0, 0.15));
+            border-top: 3px solid rgba(255, 255, 0, 0.3);
             border-radius: 40px 40px 0 0;
             min-height: 150px;
             box-sizing: border-box;
@@ -329,10 +337,10 @@
             font-family: 'Inter', sans-serif;
             font-size: 1.1em;
             font-weight: 300;
-            background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(255,255,0,0.15));
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 0, 0.15));
             border: 4px dashed #FFFF00;
             border-radius: 40px;
-            box-shadow: 0 10px 40px rgba(255,255,0,0.25);
+            box-shadow: 0 10px 40px rgba(255, 255, 0, 0.25);
             margin: 60px 15px;
             max-width: 100%;
             box-sizing: border-box;
@@ -345,18 +353,18 @@
         }
 
         .card {
-            background: linear-gradient(135deg, rgba(255,255,0,0.15), rgba(0,0,0,0.7));
+            background: linear-gradient(135deg, rgba(255, 255, 0, 0.15), rgba(0, 0, 0, 0.7));
             padding: 25px;
             border-radius: 30px;
             border: 3px dotted #FFFF00;
-            box-shadow: 0 5px 20px rgba(255,255,0,0.2);
+            box-shadow: 0 5px 20px rgba(255, 255, 0, 0.2);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             text-align: center;
         }
 
         .card:hover {
             transform: translateY(-10px) rotate(3deg);
-            box-shadow: 0 10px 30px rgba(255,255,0,0.4);
+            box-shadow: 0 10px 30px rgba(255, 255, 0, 0.4);
         }
 
         .card h3 {
@@ -364,7 +372,7 @@
             color: #FFFF00;
             font-size: 2em;
             margin-bottom: 15px;
-            text-shadow: 0 0 5px rgba(255,255,0,0.5);
+            text-shadow: 0 0 5px rgba(255, 255, 0, 0.5);
         }
 
         .card p {
@@ -385,7 +393,10 @@
                 touch-action: pan-y;
             }
 
-            a:hover, button:hover, .cta-button:hover, .social-icon:hover {
+            a:hover,
+            button:hover,
+            .cta-button:hover,
+            .social-icon:hover {
                 cursor: pointer;
             }
 
@@ -419,7 +430,9 @@
                 padding: 5px 8px;
             }
 
-            .section, #chart-section, #gallery-section {
+            .section,
+            #chart-section,
+            #gallery-section {
                 padding: 30px 15px;
             }
 
@@ -545,19 +558,23 @@
         }
     </style>
 </head>
+
 <body>
     <canvas id="bg-canvas"></canvas>
 
     <div class="content-wrapper">
         <header>
             <img id="logo" src="./assets/pee_main_text.png" alt="$PEE Logo">
-            <div class="ca-address">Contract Address: SOON</div>
+            <div class="ca-address" id="caAddress" onclick="copyCA()">Contract Address: SOON</div>
             <div class="header-socials">
                 <a href="https://x.com/peecoinsui/" target="_blank" aria-label="Follow $PEE on X">
-                    <img class="social-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png" alt="X Logo">
+                    <img class="social-icon"
+                        src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png"
+                        alt="X Logo">
                 </a>
                 <a href="https://t.me/PEECommunity" target="_blank" aria-label="Join $PEE on Telegram">
-                    <img class="social-icon" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram Logo">
+                    <img class="social-icon" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg"
+                        alt="Telegram Logo">
                 </a>
             </div>
             <nav class="nav-menu" id="nav-menu">
@@ -574,15 +591,19 @@
             <div class="cards">
                 <div class="card">
                     <h3>Origin Story</h3>
-                    <p>$PEE started as a fun idea inspired by the SUI token, but now it's flowing full force on Solana! It's the meme coin all about that urgent feeling - when you gotta PEE, you gotta go!</p>
+                    <p>$PEE started as a fun idea inspired by the SUI token, but now it's flowing full force on Solana!
+                        It's the meme coin all about that urgent feeling - when you gotta PEE, you gotta go!</p>
                 </div>
                 <div class="card">
                     <h3>Vision Ahead</h3>
-                    <p>Our vision is a world where $PEE reminds you to take a break, have a laugh, and embrace the flow. We pivoted to Solana for faster transactions - because when nature calls, you can't wait!</p>
+                    <p>Our vision is a world where $PEE reminds you to take a break, have a laugh, and embrace the flow.
+                        We pivoted to Solana for faster transactions - because when nature calls, you can't wait!</p>
                 </div>
                 <div class="card">
                     <h3>Join the Movement</h3>
-                    <p>Join the $PEE movement: it's about having that PEE feeling and turning it into crypto gold. Rooted in meme culture, $PEE blends fun and community for holders who appreciate the lighter side of life.</p>
+                    <p>Join the $PEE movement: it's about having that PEE feeling and turning it into crypto gold.
+                        Rooted in meme culture, $PEE blends fun and community for holders who appreciate the lighter
+                        side of life.</p>
                 </div>
             </div>
             <button class="cta-button" onclick="scrollToSection('community')">Join the Flow!</button>
@@ -593,11 +614,13 @@
             <div class="cards">
                 <div class="card">
                     <h3>Total Supply</h3>
-                    <p>1,000,000,000 $PEE tokens - enough to make a splash, but scarce like bathroom breaks during a movie!</p>
+                    <p>1,000,000,000 $PEE tokens - enough to make a splash, but scarce like bathroom breaks during a
+                        movie!</p>
                 </div>
                 <div class="card">
                     <h3>Distribution</h3>
-                    <p>100% fair launch, no pre-allocation. All tokens go to liquidity and community - we're all in this stream together.</p>
+                    <p>100% fair launch, no pre-allocation. All tokens go to liquidity and community - we're all in this
+                        stream together.</p>
                 </div>
                 <div class="card">
                     <h3>Security</h3>
@@ -611,23 +634,29 @@
             <div class="cards">
                 <div class="card">
                     <h3>Community Vibes</h3>
-                    <p>Join the community that's all about that PEE life! From meme contests about awkward bathroom moments to discussions on holding strong (your tokens, that is).</p>
+                    <p>Join the community that's all about that PEE life! From meme contests about awkward bathroom
+                        moments to discussions on holding strong (your tokens, that is).</p>
                 </div>
                 <div class="card">
                     <h3>Events & Engagement</h3>
-                    <p>Engage in events, vote on initiatives, and connect with fellow holders who get the urgency of $PEE. Giveaways, and exclusive content for our stream team.</p>
+                    <p>Engage in events, vote on initiatives, and connect with fellow holders who get the urgency of
+                        $PEE. Giveaways, and exclusive content for our stream team.</p>
                 </div>
                 <div class="card">
                     <h3>Welcome All</h3>
-                    <p>Whether you're holding through the pressure or just here for the laughs, $PEE welcomes all who embrace the flow.</p>
+                    <p>Whether you're holding through the pressure or just here for the laughs, $PEE welcomes all who
+                        embrace the flow.</p>
                 </div>
             </div>
             <div class="social-links">
                 <a href="https://x.com/peecoinsui/" target="_blank" aria-label="Follow $PEE on X">
-                    <img class="social-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png" alt="X Logo">
+                    <img class="social-icon"
+                        src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png"
+                        alt="X Logo">
                 </a>
                 <a href="https://t.me/PEECommunity" target="_blank" aria-label="Join $PEE on Telegram">
-                    <img class="social-icon" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram Logo">
+                    <img class="social-icon" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg"
+                        alt="Telegram Logo">
                 </a>
             </div>
             <button class="cta-button" onclick="scrollToSection('gallery')">Check the Gallery!</button>
@@ -644,7 +673,8 @@
         </section>
 
         <div class="disclaimer">
-            <p>Disclaimer: This is NOT financial advice. Participation involves risk of capital loss. Always do your own research and invest only base on your conviction.</p>
+            <p>Disclaimer: This is NOT financial advice. Participation involves risk of capital loss. Always do your own
+                research and invest only base on your conviction.</p>
         </div>
     </div>
 
@@ -664,6 +694,21 @@
 
         const peePositions = new Float32Array(particlesCount * 3);
         const scatteredPositions = new Float32Array(particlesCount * 3);
+
+
+        function copyCA() {
+            const caText = document.getElementById("caAddress").innerText.replace("Contract Address: ", "");
+            navigator.clipboard.writeText(caText).then(() => {
+                const caDiv = document.getElementById("caAddress");
+                const original = caDiv.innerHTML;
+                caDiv.innerHTML = "Copied!";
+                setTimeout(() => {
+                    caDiv.innerHTML = original;
+                }, 1500);
+            }).catch(err => {
+                alert("Failed to copy: " + err);
+            });
+        }
 
         function generatePEEShape(index, total) {
             const t = index / total;
@@ -835,4 +880,5 @@
         });
     </script>
 </body>
+
 </html>
